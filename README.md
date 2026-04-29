@@ -1,4 +1,4 @@
 # java-script-learning
 learning javascript 
 
-<p> shreyas r (learning js ) </p>
+<p> shreyas r (learning java script  ) </p>

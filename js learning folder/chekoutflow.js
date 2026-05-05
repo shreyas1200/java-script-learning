@@ -1,17 +1,4 @@
 
-
-
-
-
-
-
-// 
-
-
-
-
-
-
 //lets create a complete checkout flow //
 
 //lets create 2 variables to collect the customer data //
@@ -19,7 +6,7 @@
 const firstName = "shreyas"
 const lastName = "r"
 const userAge = 22
-const premiumMember = true
+const premiumMember = false
 const city = "bengaluru"
 
 const fullName = firstName + " " +lastName
@@ -44,7 +31,12 @@ const subtotal = product1 + product2 + product3
 
 // let us create the dicount logic for premium customers they get 20% off //
 
-const discountPercentage = 20
+let discountPercentage;
+
+if (premiumMember === true){
+    discountPercentage =20
+} else{discountPercentage =10}
+
 
 const discount = (subtotal * discountPercentage) /100 
 
@@ -70,8 +62,8 @@ console.log("city:",city.toUpperCase())
 
 console.log("subtotal:",subtotal)
 
-if (premiumMember == true){ console.log("20% discount applied")}
-else {console.log("10% discount applied")}
+if (premiumMember == true){ console.log( " Discount percentgae:20% discount applied")}
+else {console.log("Discount percentgae:10% discount applied")}
 
 console.log("discount applied",discount)
 

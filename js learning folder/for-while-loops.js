@@ -87,18 +87,18 @@ let stock3 = 8
 
 // create a loop to print product name and price//
 
-const products = [product1, product2, product3]
+// const products = [product1, product2, product3]
 
-const prices = [price1, price2, price3]
+// const prices = [price1, price2, price3]
 
-for (products>=0 ; products-- ) {
-    console.log (products)
-}
+// for (products>=0 ; products-- ) {
+//     console.log (products)
+// }
 
 // creating a loop to find even numbers using while loop //
 
 for (let i = 1; i <= 10; i++) {
     if (i % 2 === 0) {
-        console.log(console .log ( i +" " + "is a even number" ))
+        console.log( i +" " + "is a even number" )
     }
 }

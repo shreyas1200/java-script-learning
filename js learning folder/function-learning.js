@@ -18,7 +18,7 @@ function calculateTotal(price1,quanity1,){
     
 }
 
-const totalAmount2 = calculateTotal(500,2)
+const totalAmount2 = calculateTotal(500,700)
 console.log(totalAmount2)
 
 
@@ -35,3 +35,28 @@ console.log(totalAmount2)
 
 const finalAmount = applyDiscount(9000,10)    
 console.log(finalAmount)
+
+
+// creating a function to add discount for the total price //
+
+// create a funstion with the parameter total //
+
+function getDiscount (total){
+
+    if (total >= 2000){
+        return (total*20)/100
+    } else if (total >= 500){
+        return (total*10)/100
+    }else{
+        return 0
+    }
+}
+
+function finalAmount2(dicountedAmount){
+
+    return dicountedAmount - getDiscount(dicountedAmount)
+}
+
+console.log("final amount after discount:" + " " + finalAmount2(400))
+
+
